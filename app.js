@@ -2,7 +2,12 @@
     'use strict';
     var x="hello";
     angular.module("myFirstApp",[])
-    .controller("myFirstCtrl",function(){
+    .controller("myFirstCtrl",function($scope){
+        $scope.name=" ";
+
+        $scope.sayHello=function(){
+            return 'angular js basics' ;
+        }
 
 
     });

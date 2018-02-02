@@ -8,14 +8,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <script src="angular.min.js"></script>
         <script src="app.js"></script>
-        <title></title>
+        <title>My angular application</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
     </head>
     <body ng-app="myFirstApp">
       <div ng-controller="myFirstCtrl">
-          
+          My name is {{name}}
+          i am learning {{sayHello()}} <br>
+          <input type="text" ng-model="name">
       </div>
     </body>
 </html>
